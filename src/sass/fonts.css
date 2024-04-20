@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Nexa-Trial';
+    src: url('/fonts/Nexa-Trial-Bold.eot');
+    src: url('/fonts/Nexa-Trial-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Nexa-Trial-Bold.woff2') format('woff2'),
+        url('/fonts/Nexa-Trial-Bold.woff') format('woff'),
+        url('/fonts/Nexa-Trial-Bold.ttf') format('truetype'),
+        url('/fonts/Nexa-Trial-Bold.svg#Nexa-Trial-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

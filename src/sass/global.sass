@@ -1,0 +1,162 @@
+body
+   font-family: "Inter", sans-serif
+   background: rgb(253, 253, 253)
+   font-weight: 400
+   font-size: 15px
+   line-height: 150%
+   color: #000000
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $or
+.container
+   padding: 0 15px
+   max-width: 1201px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.d-flex, .q
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   font-family: 'Nexa-Trial'
+   color: rgb(255, 255, 255)
+   font-size: 40px
+   font-weight: 700
+   line-height: 45px
+   margin: 0
+h2 
+   margin: 0
+   color: rgb(0, 0, 0) 
+   font-family: 'Nexa-Trial'
+   font-size: 40px
+   font-weight: 700
+   line-height: 45px
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $or
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $or 
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path, circle
+   transition: 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: $or rgb(235, 238, 241)
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 7px
+   width: 7px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $or
+   border-radius: 6px
+.tabs__nav, .catalog__filters
+   scrollbar-width: thin
+   scrollbar-color: transparent transparent
+.btn 
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5s
+   width: 225px
+   height: 50px
+   background: $or
+   color: rgb(0, 0, 0)
+   font-family: 'Nexa-Trial'
+   border-radius: 5px
+   font-size: 16px
+   font-weight: 700
+   line-height: 130%
+   border: 2px solid $or
+   &:hover 
+      background: transparent 
+      color: $or
+   &_2
+      border: 2px solid $green
+      border-radius: 10px
+      background: transparent
+      color: $green
+      font-family: "Inter", sans-serif
+      text-transform: uppercase
+      &:hover
+         background: $green
+         color: white
+
+input[type=search]::-ms-clear
+   display: none
+   width: 0
+   height: 0   
+input[type=search]::-ms-reveal
+   display: none
+   width: 0
+   height: 0   
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+   display: none   
+input[type=search]::-ms-clear   
+   display: none
+   width: 0
+   height: 0     
+input[type=search]::-ms-revea
+   display: none
+   width: 0
+   height: 0     
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+   display: none
