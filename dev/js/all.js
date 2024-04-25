@@ -133,6 +133,42 @@ $(document).ready(function () {
     $('#div' + myvar).show();
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  $('.catalog__open').click(function (event) {
+    $(this).css('display', 'none');
+    $('.catalog__see').slideToggle();
+    $('.swiper-button-prev2').addClass('opened');
+    $('.swiper-button-next2').addClass('opened');
+    return false;
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  $('.catalog__open2').click(function (event) {
+    $(this).css('display', 'none');
+    $('.catalog__see2').slideToggle();
+    $('.swiper-button-prev3').addClass('opened');
+    $('.swiper-button-next3').addClass('opened');
+    return false;
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  $('.catalog__open3').click(function (event) {
+    $(this).css('display', 'none');
+    $('.catalog__see3').slideToggle();
+    $('.swiper-button-prev4').addClass('opened');
+    $('.swiper-button-next4').addClass('opened');
+    return false;
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  $('.catalog__open4').click(function (event) {
+    $(this).css('display', 'none');
+    $('.catalog__see4').slideToggle();
+    $('.swiper-button-prev5').addClass('opened');
+    $('.swiper-button-next5').addClass('opened');
+    return false;
+  });
+});
 $(document).ready(function () {
   let items = document.querySelectorAll('.menu__left li');
 
@@ -485,7 +521,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (itemClass == "accordeon__button closed") {
       this.className = "accordeon__button active";
       var panel = this.nextElementSibling;
-      panel.style.maxHeight = panel.scrollHeight + "100px";
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
 
   }
@@ -859,6 +895,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiper1 = new Swiper('.swiper1', {
     slidesPerView: 1,
     loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination1",
       clickable: true,

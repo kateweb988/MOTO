@@ -661,15 +661,20 @@ ul.info li
       right: -78px
 .main 
    padding: 50px 0 120px
+   .main-arr
+      opacity: 0
+      &.opened
+         opacity: 1
    &__wrap 
       padding: 47px 0 50px 
       &:nth-child(2n)
          background: rgb(248, 248, 248)
    .swip 
       overflow: hidden
+      margin-top: 36px
    &__row
       align-items: center
-      margin-bottom: 36px
+      margin-bottom: 0px
       h2 
          margin-right: 116px
          min-width: 488px
@@ -1043,7 +1048,10 @@ ul.info li
       color: rgb(173, 180, 189)
       font-size: 15px
       font-weight: 400
-      line-height: 48px
+      line-height: 100%
+      margin-bottom: 8px
+      display: block
+      text-align: center
       &:hover 
          color: $or
    &__com 
@@ -1052,6 +1060,11 @@ ul.info li
          color: rgb(173, 180, 189)
          font-size: 15px
          margin-right: 21px
+   &__right 
+      text-align: center
+      font-size: 13px
+      opacity: 0.7
+      margin-top: 40px
 .up 
    position: fixed
    right: 5%
@@ -1241,6 +1254,7 @@ ul.info li
          display: none
       .swip 
          overflow: hidden
+         margin-top: 36px
       &__text 
          margin-bottom: 50px
       article 
@@ -1949,6 +1963,11 @@ tbody tr td
                border: 1px solid  $or
                color: $or
                background: transparent
+      &:nth-child(5)
+         .per__top 
+            p 
+               font-weight: 400
+               top: 16px
    &__top 
       align-items: flex-start
       p 
@@ -2197,14 +2216,14 @@ input[type=range]::-webkit-slider-thumb
    cursor: pointer
    border-radius: 50%
    border: none
-   top: 0px
+   top: 1px
    z-index: 20 !important
    position: relative
 input[type=range]:nth-child(2)::-webkit-slider-thumb
    background: url(/img/range.svg) no-repeat center 0px  !important
    background-color: $or
    position: relative
-   top: -1.7px
+   top: -0.6px
    height: 28px
    z-index: 20 !important
    width: 28px
@@ -2254,6 +2273,8 @@ input[type="range"]
    opacity: 0
 .catalog 
    padding: 34px 0 100px
+   &__see, &__see2, &__see3, &__see4
+      display: none
    .option 
       margin-top: 0 !important
       margin-bottom: 27px
@@ -2456,7 +2477,30 @@ input[type="range"]
    &__filters
       overflow-x: auto 
       margin-bottom: 40px
-      padding-bottom: 10px
+      padding: 20px 0
+      background: #F8F8F8
+      overflow: visible
+      position: relative
+      &:before 
+         display: block
+         height: 100%
+         width: 500%
+         position: absolute
+         left: -500%
+         background: #F8F8F8
+         z-index: 0
+         top: 0
+         content: ""
+      &:after
+         display: block
+         height: 100%
+         width: 500%
+         position: absolute
+         right: -500%
+         background: #F8F8F8
+         z-index: 0
+         top: 0
+         content: ""
       a 
          display: flex
          align-items: center

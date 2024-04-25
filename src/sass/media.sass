@@ -602,7 +602,32 @@
       img 
          width: 33%  
          height: 250px
+   .footer__flex
+      flex-direction: column
+   .footer__line
+      margin: 20px 0
+   .catalog 
+      &__see, &__see2, &__see3, &__see4
+         display: block
+   .main .pag
+      margin-top: 30px
+   .main 
+      .main__btn
+         display: none
+   .main__wrap
+      padding: 40px 0 60px
 @media screen and (max-width: 767px)
+   .main .swip
+      margin-top: 20px
+   .news-item .swip
+      margin-top: 20px
+   .catalog__filters
+      overflow-x: auto
+      padding: 20px
+      &::before
+         display: none
+      &:after 
+         display: none
    h1 
       font-size: 33px
       line-height: 42px
@@ -712,6 +737,8 @@
          &:first-child
             margin-right: 0
             margin-bottom: 20px
+   .footer .footer__policy
+      text-align: left
 @media screen and (max-width: 576px)
    button:active, button:focus 
       outline: none
@@ -1271,6 +1298,12 @@
    .card-rev__images img
       height: 140px
       margin-right: 10px
+   .footer .footer__policy
+      font-size: 14px
+   .footer__right
+      text-align: left
+      margin-left: 15px
+      margin-bottom: 10px
 
 
 
